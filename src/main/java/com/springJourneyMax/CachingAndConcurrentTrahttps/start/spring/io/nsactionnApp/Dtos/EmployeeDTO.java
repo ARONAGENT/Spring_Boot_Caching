@@ -2,6 +2,7 @@ package com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsacti
 
 import lombok.*;
 
+import java.io.Serializable;
 import java.util.Objects;
 
 
@@ -10,7 +11,7 @@ import java.util.Objects;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class EmployeeDTO {
+public class EmployeeDTO implements Serializable {
 
 
     private Integer empId;
