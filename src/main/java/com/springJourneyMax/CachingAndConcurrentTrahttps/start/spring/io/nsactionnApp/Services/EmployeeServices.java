@@ -31,7 +31,7 @@ public class EmployeeServices {
     }
 
 
-
+    @Cacheable(cacheNames = "employees",key = "#id")
     public EmployeeDTO getEmpById(int id){
         EmployeeEntity employeeEntity= employeeRepository.findById(id)
                 .orElseThrow(()-> new
@@ -40,6 +40,7 @@ public class EmployeeServices {
     }
 
 
+    @CachePut(cacheNames = "employees",key = "#result.empId")
     public EmployeeDTO addEmp(EmployeeDTO employeeDTO) {
         EmployeeEntity obj=modelMapper.map(employeeDTO,EmployeeEntity.class);
         EmployeeEntity employeeEntity=employeeRepository.save(obj);
@@ -51,6 +52,7 @@ public class EmployeeServices {
         if(!exist) throw new NoSuchElementException();
     }
 
+    @CachePut(cacheNames = "employees",key = "#result.empId")
     public EmployeeDTO updateEmp(int empId, EmployeeDTO employeeDTO) {
         EmployeeEntity employeeEntity=modelMapper.map(employeeDTO,EmployeeEntity.class);
         isExistById(empId);
@@ -59,6 +61,7 @@ public class EmployeeServices {
         return modelMapper.map(employeeEntity,EmployeeDTO.class);
     }
 
+    @Cacheable(cacheNames = "employees",key = "#result")
     public List<EmployeeDTO> allEmployee() {
         List<EmployeeEntity> employeeEntity=employeeRepository.findAll();
         return employeeEntity
@@ -67,6 +70,7 @@ public class EmployeeServices {
                 .collect(Collectors.toList());
     }
 
+    @CacheEvict(cacheNames = "employees",key = "#empId")
     public ResponseEntity<EmployeeDTO> deleteEmployee(int empId) {
         Optional<EmployeeEntity> employeeEntity = employeeRepository.findById(empId);
         if (employeeEntity.isEmpty()) {
