@@ -8,6 +8,7 @@ public class CachingAndConcurrentTransactionAppApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CachingAndConcurrentTransactionAppApplication.class, args);
+		System.out.println("Caching And transaction Application Running Successfully...");
 	}
 
 }

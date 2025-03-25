@@ -6,6 +6,7 @@ import com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactio
 import com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Entities.EmployeeEntity;
 import com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Exceptions.ResourceNotFoundException;
 import com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Repositories.EmployeeRepository;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.cache.annotation.CacheEvict;
@@ -14,6 +15,7 @@ import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -25,11 +27,13 @@ import java.util.stream.Collectors;
 public class EmployeeServices {
     private final EmployeeRepository employeeRepository;
     private final ModelMapper modelMapper;
+    private final SalaryAccountServices salaryAccountServices;
 
-    public EmployeeServices(ModelMapper modelMapper, EmployeeRepository employeeRepository) {
+    public EmployeeServices(ModelMapper modelMapper, EmployeeRepository employeeRepository, SalaryAccountServices salaryAccountServices) {
         this.modelMapper = modelMapper;
         this.employeeRepository = employeeRepository;
 
+        this.salaryAccountServices = salaryAccountServices;
     }
 
 
@@ -46,11 +50,14 @@ public class EmployeeServices {
     }
 
     @CachePut(cacheNames = "employees", key = "#result.empId")
+    @Transactional
     public EmployeeDTO addEmp(EmployeeDTO employeeDTO) {
         log.info("Adding new employee: {}", employeeDTO);
         EmployeeEntity obj = modelMapper.map(employeeDTO, EmployeeEntity.class);
         EmployeeEntity employeeEntity = employeeRepository.save(obj);
         log.info("Successfully added employee with ID: {}", employeeEntity.getEmpId());
+        salaryAccountServices.createAccount(employeeEntity);
+        log.info("Successfully added employee in salary Account Table with ID: {}", employeeEntity.getEmpId());
         return modelMapper.map(employeeEntity, EmployeeDTO.class);
     }
 
