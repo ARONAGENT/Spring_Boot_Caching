@@ -11,7 +11,7 @@
         </encoder>
     </appender>
 
-    <logger name="com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Services;" level="INFO" additivity="false">
+    <logger name="com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Services" level="INFO" additivity="false">
         <appender-ref ref="FILE" />
     </logger>
 

@@ -29,8 +29,8 @@ public class SalaryAccount {
 //     4. A database validation check is put in place; the next version number should
 //       exceed the current version number by 1. The transaction aborts if the
 //       validation fails and the user tries again from step 2.
-    @Version
-    private Long version;
+//    @Version
+//    private Long version;
 
     @OneToOne
     @JsonIgnore

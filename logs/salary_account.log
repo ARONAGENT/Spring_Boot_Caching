@@ -17080,3 +17080,438 @@ com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Deadlock found w
 2025-03-26 02:38:24 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-03-26 02:38:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2025-03-26 02:38:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-26 02:45:07 [main] INFO  c.s.C.s.s.i.n.CachingAndConcurrentTransactionAppApplication - Starting CachingAndConcurrentTransactionAppApplication using Java 21.0.6 with PID 12512 (D:\springJourney\Spring 1-100\CachingAndConcurrentTransactionnApp\target\classes started by ASUS in D:\springJourney\Spring 1-100\CachingAndConcurrentTransactionnApp)
+2025-03-26 02:45:07 [main] INFO  c.s.C.s.s.i.n.CachingAndConcurrentTransactionAppApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-26 02:45:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 02:45:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-26 02:45:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 153 ms. Found 2 JPA repository interfaces.
+2025-03-26 02:45:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 02:45:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-26 02:45:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Repositories.EmployeeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-26 02:45:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Repositories.SalaryAccountRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-26 02:45:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-03-26 02:45:09 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
+2025-03-26 02:45:09 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2025-03-26 02:45:09 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-26 02:45:09 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-26 02:45:09 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-26 02:45:09 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2412 ms
+2025-03-26 02:45:10 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-26 02:45:10 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-03-26 02:45:10 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-03-26 02:45:10 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-26 02:45:10 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-26 02:45:11 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2a99fa07
+2025-03-26 02:45:11 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-26 02:45:12 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.35
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-26 02:45:13 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-26 02:45:13 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-26 02:45:15 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-26 02:45:16 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2025-03-26 02:45:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+2025-03-26 02:45:16 [main] INFO  c.s.C.s.s.i.n.CachingAndConcurrentTransactionAppApplication - Started CachingAndConcurrentTransactionAppApplication in 9.733 seconds (process running for 10.225)
+2025-03-26 02:45:24 [http-nio-9090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-26 02:45:24 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-26 02:45:24 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-03-26 02:45:25 [http-nio-9090-exec-2] INFO  c.s.C.s.s.i.n.S.EmployeeServices - Adding new employee: com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Dtos.EmployeeDTO@2291ba0e
+2025-03-26 02:45:25 [http-nio-9090-exec-2] INFO  c.s.C.s.s.i.n.S.EmployeeServices - Successfully added employee with ID: 1
+2025-03-26 02:45:25 [http-nio-9090-exec-2] INFO  c.s.C.s.s.i.n.S.EmployeeServices - Successfully added employee in salary Account Table with ID: 1
+2025-03-26 02:46:49 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-26 02:46:49 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-26 02:46:49 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-26 02:46:49 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-26 02:46:50 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-26 02:46:53 [main] INFO  c.s.C.s.s.i.n.CachingAndConcurrentTransactionAppApplication - Starting CachingAndConcurrentTransactionAppApplication using Java 21.0.6 with PID 4088 (D:\springJourney\Spring 1-100\CachingAndConcurrentTransactionnApp\target\classes started by ASUS in D:\springJourney\Spring 1-100\CachingAndConcurrentTransactionnApp)
+2025-03-26 02:46:53 [main] INFO  c.s.C.s.s.i.n.CachingAndConcurrentTransactionAppApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-26 02:46:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 02:46:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-26 02:46:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 207 ms. Found 2 JPA repository interfaces.
+2025-03-26 02:46:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 02:46:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-26 02:46:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Repositories.EmployeeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-26 02:46:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Repositories.SalaryAccountRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-26 02:46:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-03-26 02:46:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
+2025-03-26 02:46:55 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2025-03-26 02:46:55 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-26 02:46:55 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-26 02:46:55 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-26 02:46:55 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2306 ms
+2025-03-26 02:46:55 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-26 02:46:56 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-03-26 02:46:56 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-03-26 02:46:56 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-26 02:46:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-26 02:46:57 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@299cab08
+2025-03-26 02:46:57 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-26 02:46:58 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.35
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-26 02:46:59 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-26 02:46:59 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-26 02:47:01 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-26 02:47:02 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2025-03-26 02:47:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+2025-03-26 02:47:02 [main] INFO  c.s.C.s.s.i.n.CachingAndConcurrentTransactionAppApplication - Started CachingAndConcurrentTransactionAppApplication in 10.025 seconds (process running for 10.563)
+2025-03-26 02:47:17 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-26 02:47:17 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-26 02:47:17 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-03-26 02:47:17 [http-nio-9090-exec-1] INFO  c.s.C.s.s.i.n.S.EmployeeServices - Adding new employee: com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Dtos.EmployeeDTO@2291ba0e
+2025-03-26 02:47:17 [http-nio-9090-exec-1] INFO  c.s.C.s.s.i.n.S.EmployeeServices - Successfully added employee with ID: 1
+2025-03-26 02:47:17 [http-nio-9090-exec-1] INFO  c.s.C.s.s.i.n.S.EmployeeServices - Successfully added employee in salary Account Table with ID: 1
+2025-03-26 02:48:08 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-26 02:48:08 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-26 02:48:08 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-26 02:48:08 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-26 02:48:08 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-26 02:48:13 [main] INFO  c.s.C.s.s.i.n.CachingAndConcurrentTransactionAppApplication - Starting CachingAndConcurrentTransactionAppApplication using Java 21.0.6 with PID 21404 (D:\springJourney\Spring 1-100\CachingAndConcurrentTransactionnApp\target\classes started by ASUS in D:\springJourney\Spring 1-100\CachingAndConcurrentTransactionnApp)
+2025-03-26 02:48:13 [main] INFO  c.s.C.s.s.i.n.CachingAndConcurrentTransactionAppApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-26 02:48:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 02:48:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-26 02:48:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 201 ms. Found 2 JPA repository interfaces.
+2025-03-26 02:48:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 02:48:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-26 02:48:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Repositories.EmployeeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-26 02:48:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Repositories.SalaryAccountRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-26 02:48:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2025-03-26 02:48:15 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
+2025-03-26 02:48:15 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2025-03-26 02:48:15 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-26 02:48:15 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-26 02:48:15 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-26 02:48:15 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2439 ms
+2025-03-26 02:48:16 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-26 02:48:16 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-03-26 02:48:16 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-03-26 02:48:16 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-26 02:48:16 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-26 02:48:18 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@22429a11
+2025-03-26 02:48:18 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-26 02:48:18 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.35
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-26 02:48:19 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-26 02:48:20 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-26 02:48:21 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-26 02:48:22 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2025-03-26 02:48:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+2025-03-26 02:48:22 [main] INFO  c.s.C.s.s.i.n.CachingAndConcurrentTransactionAppApplication - Started CachingAndConcurrentTransactionAppApplication in 10.097 seconds (process running for 10.595)
+2025-03-26 02:48:34 [http-nio-9090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-26 02:48:34 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-26 02:48:34 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2025-03-26 02:48:34 [http-nio-9090-exec-2] INFO  c.s.C.s.s.i.n.S.EmployeeServices - Adding new employee: com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Dtos.EmployeeDTO@2291ba0e
+2025-03-26 02:48:34 [http-nio-9090-exec-2] INFO  c.s.C.s.s.i.n.S.EmployeeServices - Successfully added employee with ID: 1
+2025-03-26 02:48:34 [http-nio-9090-exec-2] INFO  c.s.C.s.s.i.n.S.EmployeeServices - Successfully added employee in salary Account Table with ID: 1
+2025-03-26 02:52:05 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-26 02:52:05 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-26 02:52:05 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-26 02:52:05 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-26 02:52:06 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-26 02:52:11 [main] INFO  c.s.C.s.s.i.n.CachingAndConcurrentTransactionAppApplication - Starting CachingAndConcurrentTransactionAppApplication using Java 21.0.6 with PID 14004 (D:\springJourney\Spring 1-100\CachingAndConcurrentTransactionnApp\target\classes started by ASUS in D:\springJourney\Spring 1-100\CachingAndConcurrentTransactionnApp)
+2025-03-26 02:52:11 [main] INFO  c.s.C.s.s.i.n.CachingAndConcurrentTransactionAppApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-26 02:52:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 02:52:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-26 02:52:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 175 ms. Found 2 JPA repository interfaces.
+2025-03-26 02:52:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 02:52:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-26 02:52:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Repositories.EmployeeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-26 02:52:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Repositories.SalaryAccountRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-26 02:52:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2025-03-26 02:52:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
+2025-03-26 02:52:13 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2025-03-26 02:52:13 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-26 02:52:13 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-26 02:52:13 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-26 02:52:13 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2344 ms
+2025-03-26 02:52:13 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-26 02:52:13 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-03-26 02:52:13 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-03-26 02:52:14 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-26 02:52:14 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-26 02:52:15 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1df06ecd
+2025-03-26 02:52:15 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-26 02:52:16 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.35
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-26 02:52:17 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-26 02:52:18 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-26 02:52:19 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-26 02:52:20 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2025-03-26 02:52:20 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+2025-03-26 02:52:20 [main] INFO  c.s.C.s.s.i.n.CachingAndConcurrentTransactionAppApplication - Started CachingAndConcurrentTransactionAppApplication in 10.609 seconds (process running for 11.139)
+2025-03-26 02:52:42 [http-nio-9090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-26 02:52:42 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-26 02:52:42 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-03-26 02:52:43 [http-nio-9090-exec-2] INFO  c.s.C.s.s.i.n.S.EmployeeServices - Adding new employee: com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Dtos.EmployeeDTO@2291ba0e
+2025-03-26 02:52:43 [http-nio-9090-exec-2] INFO  c.s.C.s.s.i.n.S.EmployeeServices - Successfully added employee with ID: 1
+2025-03-26 02:52:43 [http-nio-9090-exec-2] INFO  c.s.C.s.s.i.n.S.EmployeeServices - Successfully added employee in salary Account Table with ID: 1
+2025-03-26 02:55:54 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-26 02:55:54 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-26 02:55:54 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-26 02:55:54 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-26 02:55:55 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-26 02:55:58 [main] INFO  c.s.C.s.s.i.n.CachingAndConcurrentTransactionAppApplication - Starting CachingAndConcurrentTransactionAppApplication using Java 21.0.6 with PID 22228 (D:\springJourney\Spring 1-100\CachingAndConcurrentTransactionnApp\target\classes started by ASUS in D:\springJourney\Spring 1-100\CachingAndConcurrentTransactionnApp)
+2025-03-26 02:55:58 [main] INFO  c.s.C.s.s.i.n.CachingAndConcurrentTransactionAppApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-26 02:55:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 02:55:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-26 02:55:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 141 ms. Found 2 JPA repository interfaces.
+2025-03-26 02:55:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 02:55:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-26 02:55:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Repositories.EmployeeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-26 02:55:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Repositories.SalaryAccountRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-26 02:55:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2025-03-26 02:56:00 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
+2025-03-26 02:56:00 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2025-03-26 02:56:00 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-26 02:56:00 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-26 02:56:00 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-26 02:56:00 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2402 ms
+2025-03-26 02:56:01 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-26 02:56:01 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-03-26 02:56:01 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-03-26 02:56:01 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-26 02:56:01 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-26 02:56:02 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2a99fa07
+2025-03-26 02:56:02 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-26 02:56:03 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.35
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-26 02:56:04 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-26 02:56:04 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-26 02:56:05 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-26 02:56:06 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2025-03-26 02:56:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+2025-03-26 02:56:06 [main] INFO  c.s.C.s.s.i.n.CachingAndConcurrentTransactionAppApplication - Started CachingAndConcurrentTransactionAppApplication in 9.466 seconds (process running for 10.005)
+2025-03-26 02:56:16 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-26 02:56:16 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-26 02:56:16 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-03-26 02:56:18 [http-nio-9090-exec-1] INFO  c.s.C.s.s.i.n.S.EmployeeServices - Fetching employee with ID: 1
+2025-03-26 02:56:18 [http-nio-9090-exec-1] ERROR c.s.C.s.s.i.n.S.EmployeeServices - No employee found with ID: 1
+2025-03-26 02:56:27 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-26 02:56:27 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-26 02:56:27 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-26 02:56:27 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-26 02:56:27 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-26 02:56:31 [main] INFO  c.s.C.s.s.i.n.CachingAndConcurrentTransactionAppApplication - Starting CachingAndConcurrentTransactionAppApplication using Java 21.0.6 with PID 20272 (D:\springJourney\Spring 1-100\CachingAndConcurrentTransactionnApp\target\classes started by ASUS in D:\springJourney\Spring 1-100\CachingAndConcurrentTransactionnApp)
+2025-03-26 02:56:31 [main] INFO  c.s.C.s.s.i.n.CachingAndConcurrentTransactionAppApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-26 02:56:32 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 02:56:32 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-26 02:56:32 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 198 ms. Found 2 JPA repository interfaces.
+2025-03-26 02:56:32 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 02:56:32 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-26 02:56:32 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Repositories.EmployeeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-26 02:56:32 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Repositories.SalaryAccountRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-26 02:56:32 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2025-03-26 02:56:33 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
+2025-03-26 02:56:33 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2025-03-26 02:56:33 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-26 02:56:33 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-26 02:56:33 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-26 02:56:34 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2427 ms
+2025-03-26 02:56:34 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-26 02:56:34 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-03-26 02:56:34 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-03-26 02:56:35 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-26 02:56:35 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-26 02:56:36 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1df06ecd
+2025-03-26 02:56:36 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-26 02:56:36 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.35
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-26 02:56:37 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-26 02:56:38 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-26 02:56:39 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-26 02:56:40 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2025-03-26 02:56:40 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+2025-03-26 02:56:40 [main] INFO  c.s.C.s.s.i.n.CachingAndConcurrentTransactionAppApplication - Started CachingAndConcurrentTransactionAppApplication in 10.06 seconds (process running for 10.631)
+2025-03-26 02:56:49 [http-nio-9090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-26 02:56:49 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-26 02:56:49 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-03-26 02:56:49 [http-nio-9090-exec-2] INFO  c.s.C.s.s.i.n.S.EmployeeServices - Adding new employee: com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Dtos.EmployeeDTO@2291ba0e
+2025-03-26 02:56:49 [http-nio-9090-exec-2] INFO  c.s.C.s.s.i.n.S.EmployeeServices - Successfully added employee with ID: 1
+2025-03-26 02:56:49 [http-nio-9090-exec-2] INFO  c.s.C.s.s.i.n.S.EmployeeServices - Successfully added employee in salary Account Table with ID: 1
+2025-03-26 03:00:03 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-26 03:00:03 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-26 03:00:03 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-26 03:00:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-26 03:00:04 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-26 03:05:45 [main] INFO  c.s.C.s.s.i.n.CachingAndConcurrentTransactionAppApplication - Starting CachingAndConcurrentTransactionAppApplication using Java 21.0.6 with PID 8044 (D:\springJourney\Spring 1-100\CachingAndConcurrentTransactionnApp\target\classes started by ASUS in D:\springJourney\Spring 1-100\CachingAndConcurrentTransactionnApp)
+2025-03-26 03:05:45 [main] INFO  c.s.C.s.s.i.n.CachingAndConcurrentTransactionAppApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-26 03:05:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 03:05:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-26 03:05:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 173 ms. Found 2 JPA repository interfaces.
+2025-03-26 03:05:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-26 03:05:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-26 03:05:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Repositories.EmployeeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-26 03:05:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Repositories.SalaryAccountRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-26 03:05:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2025-03-26 03:05:48 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
+2025-03-26 03:05:48 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2025-03-26 03:05:48 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-26 03:05:48 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-26 03:05:48 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-26 03:05:48 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2557 ms
+2025-03-26 03:05:48 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-26 03:05:48 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-03-26 03:05:48 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-03-26 03:05:49 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-26 03:05:49 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-26 03:05:50 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@46de118b
+2025-03-26 03:05:50 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-26 03:05:50 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.35
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-26 03:05:51 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-26 03:05:52 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-26 03:05:53 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-26 03:05:54 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2025-03-26 03:05:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+2025-03-26 03:05:54 [main] INFO  c.s.C.s.s.i.n.CachingAndConcurrentTransactionAppApplication - Started CachingAndConcurrentTransactionAppApplication in 10.095 seconds (process running for 10.628)
+2025-03-26 03:06:02 [http-nio-9090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-26 03:06:02 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-26 03:06:02 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-03-26 03:06:03 [http-nio-9090-exec-2] INFO  c.s.C.s.s.i.n.S.EmployeeServices - Adding new employee: com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Dtos.EmployeeDTO@2291ba0e
+2025-03-26 03:06:03 [http-nio-9090-exec-2] INFO  c.s.C.s.s.i.n.S.EmployeeServices - Successfully added employee with ID: 1
+2025-03-26 03:06:03 [http-nio-9090-exec-2] INFO  c.s.C.s.s.i.n.S.EmployeeServices - Successfully added employee in salary Account Table with ID: 1
+2025-03-26 03:06:19 [http-nio-9090-exec-3] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 0.00 | New Balance: 1.00
+2025-03-26 03:06:19 [http-nio-9090-exec-6] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 1.00 | New Balance: 2.00
+2025-03-26 03:06:20 [http-nio-9090-exec-5] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 2.00 | New Balance: 3.00
+2025-03-26 03:06:20 [http-nio-9090-exec-4] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 3.00 | New Balance: 4.00
+2025-03-26 03:06:20 [http-nio-9090-exec-7] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 4.00 | New Balance: 5.00
+2025-03-26 03:06:20 [http-nio-9090-exec-8] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 5.00 | New Balance: 6.00
+2025-03-26 03:06:20 [http-nio-9090-exec-9] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 6.00 | New Balance: 7.00
+2025-03-26 03:06:20 [http-nio-9090-exec-10] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 7.00 | New Balance: 8.00
+2025-03-26 03:06:20 [http-nio-9090-exec-1] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 8.00 | New Balance: 9.00
+2025-03-26 03:06:20 [http-nio-9090-exec-2] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 9.00 | New Balance: 10.00
+2025-03-26 03:06:20 [http-nio-9090-exec-6] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 10.00 | New Balance: 11.00
+2025-03-26 03:06:20 [http-nio-9090-exec-5] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 11.00 | New Balance: 12.00
+2025-03-26 03:06:20 [http-nio-9090-exec-3] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 12.00 | New Balance: 13.00
+2025-03-26 03:06:20 [http-nio-9090-exec-4] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 13.00 | New Balance: 14.00
+2025-03-26 03:06:21 [http-nio-9090-exec-7] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 14.00 | New Balance: 15.00
+2025-03-26 03:06:21 [http-nio-9090-exec-8] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 15.00 | New Balance: 16.00
+2025-03-26 03:06:21 [http-nio-9090-exec-9] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 16.00 | New Balance: 17.00
+2025-03-26 03:06:21 [http-nio-9090-exec-1] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 17.00 | New Balance: 18.00
+2025-03-26 03:06:21 [http-nio-9090-exec-10] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 18.00 | New Balance: 19.00
+2025-03-26 03:06:21 [http-nio-9090-exec-2] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 19.00 | New Balance: 20.00
+2025-03-26 03:06:21 [http-nio-9090-exec-6] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 20.00 | New Balance: 21.00
+2025-03-26 03:06:21 [http-nio-9090-exec-3] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 21.00 | New Balance: 22.00
+2025-03-26 03:06:21 [http-nio-9090-exec-4] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 22.00 | New Balance: 23.00
+2025-03-26 03:06:21 [http-nio-9090-exec-5] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 23.00 | New Balance: 24.00
+2025-03-26 03:06:21 [http-nio-9090-exec-7] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 24.00 | New Balance: 25.00
+2025-03-26 03:06:21 [http-nio-9090-exec-8] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 25.00 | New Balance: 26.00
+2025-03-26 03:06:22 [http-nio-9090-exec-9] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 26.00 | New Balance: 27.00
+2025-03-26 03:06:22 [http-nio-9090-exec-1] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 27.00 | New Balance: 28.00
+2025-03-26 03:06:22 [http-nio-9090-exec-10] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 28.00 | New Balance: 29.00
+2025-03-26 03:06:22 [http-nio-9090-exec-2] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 29.00 | New Balance: 30.00
+2025-03-26 03:06:22 [http-nio-9090-exec-6] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 30.00 | New Balance: 31.00
+2025-03-26 03:06:22 [http-nio-9090-exec-3] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 31.00 | New Balance: 32.00
+2025-03-26 03:06:22 [http-nio-9090-exec-5] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 32.00 | New Balance: 33.00
+2025-03-26 03:06:22 [http-nio-9090-exec-7] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 33.00 | New Balance: 34.00
+2025-03-26 03:06:22 [http-nio-9090-exec-8] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 34.00 | New Balance: 35.00
+2025-03-26 03:06:22 [http-nio-9090-exec-4] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 35.00 | New Balance: 36.00
+2025-03-26 03:06:22 [http-nio-9090-exec-9] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 36.00 | New Balance: 37.00
+2025-03-26 03:06:22 [http-nio-9090-exec-1] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 37.00 | New Balance: 38.00
+2025-03-26 03:06:23 [http-nio-9090-exec-10] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 38.00 | New Balance: 39.00
+2025-03-26 03:06:23 [http-nio-9090-exec-6] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 39.00 | New Balance: 40.00
+2025-03-26 03:06:23 [http-nio-9090-exec-3] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 40.00 | New Balance: 41.00
+2025-03-26 03:06:23 [http-nio-9090-exec-5] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 41.00 | New Balance: 42.00
+2025-03-26 03:06:23 [http-nio-9090-exec-2] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 42.00 | New Balance: 43.00
+2025-03-26 03:06:23 [http-nio-9090-exec-7] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 43.00 | New Balance: 44.00
+2025-03-26 03:06:23 [http-nio-9090-exec-4] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 44.00 | New Balance: 45.00
+2025-03-26 03:06:23 [http-nio-9090-exec-9] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 45.00 | New Balance: 46.00
+2025-03-26 03:06:23 [http-nio-9090-exec-8] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 46.00 | New Balance: 47.00
+2025-03-26 03:06:23 [http-nio-9090-exec-1] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 47.00 | New Balance: 48.00
+2025-03-26 03:06:23 [http-nio-9090-exec-10] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 48.00 | New Balance: 49.00
+2025-03-26 03:06:23 [http-nio-9090-exec-6] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 49.00 | New Balance: 50.00
+2025-03-26 03:06:24 [http-nio-9090-exec-3] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 50.00 | New Balance: 51.00
+2025-03-26 03:06:24 [http-nio-9090-exec-5] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 51.00 | New Balance: 52.00
+2025-03-26 03:06:24 [http-nio-9090-exec-2] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 52.00 | New Balance: 53.00
+2025-03-26 03:06:24 [http-nio-9090-exec-4] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 53.00 | New Balance: 54.00
+2025-03-26 03:06:24 [http-nio-9090-exec-9] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 54.00 | New Balance: 55.00
+2025-03-26 03:06:24 [http-nio-9090-exec-8] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 55.00 | New Balance: 56.00
+2025-03-26 03:06:24 [http-nio-9090-exec-7] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 56.00 | New Balance: 57.00
+2025-03-26 03:06:24 [http-nio-9090-exec-1] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 57.00 | New Balance: 58.00
+2025-03-26 03:06:24 [http-nio-9090-exec-6] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 58.00 | New Balance: 59.00
+2025-03-26 03:06:24 [http-nio-9090-exec-3] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 59.00 | New Balance: 60.00
+2025-03-26 03:06:24 [http-nio-9090-exec-5] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 60.00 | New Balance: 61.00
+2025-03-26 03:06:24 [http-nio-9090-exec-10] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 61.00 | New Balance: 62.00
+2025-03-26 03:06:25 [http-nio-9090-exec-2] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 62.00 | New Balance: 63.00
+2025-03-26 03:06:25 [http-nio-9090-exec-9] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 63.00 | New Balance: 64.00
+2025-03-26 03:06:25 [http-nio-9090-exec-4] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 64.00 | New Balance: 65.00
+2025-03-26 03:06:25 [http-nio-9090-exec-7] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 65.00 | New Balance: 66.00
+2025-03-26 03:06:25 [http-nio-9090-exec-1] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 66.00 | New Balance: 67.00
+2025-03-26 03:06:25 [http-nio-9090-exec-8] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 67.00 | New Balance: 68.00
+2025-03-26 03:06:25 [http-nio-9090-exec-6] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 68.00 | New Balance: 69.00
+2025-03-26 03:06:25 [http-nio-9090-exec-3] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 69.00 | New Balance: 70.00
+2025-03-26 03:06:25 [http-nio-9090-exec-5] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 70.00 | New Balance: 71.00
+2025-03-26 03:06:25 [http-nio-9090-exec-10] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 71.00 | New Balance: 72.00
+2025-03-26 03:06:25 [http-nio-9090-exec-9] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 72.00 | New Balance: 73.00
+2025-03-26 03:06:25 [http-nio-9090-exec-2] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 73.00 | New Balance: 74.00
+2025-03-26 03:06:26 [http-nio-9090-exec-4] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 74.00 | New Balance: 75.00
+2025-03-26 03:06:26 [http-nio-9090-exec-7] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 75.00 | New Balance: 76.00
+2025-03-26 03:06:26 [http-nio-9090-exec-1] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 76.00 | New Balance: 77.00
+2025-03-26 03:06:26 [http-nio-9090-exec-8] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 77.00 | New Balance: 78.00
+2025-03-26 03:06:26 [http-nio-9090-exec-3] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 78.00 | New Balance: 79.00
+2025-03-26 03:06:26 [http-nio-9090-exec-5] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 79.00 | New Balance: 80.00
+2025-03-26 03:06:26 [http-nio-9090-exec-6] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 80.00 | New Balance: 81.00
+2025-03-26 03:06:26 [http-nio-9090-exec-10] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 81.00 | New Balance: 82.00
+2025-03-26 03:06:26 [http-nio-9090-exec-9] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 82.00 | New Balance: 83.00
+2025-03-26 03:06:26 [http-nio-9090-exec-2] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 83.00 | New Balance: 84.00
+2025-03-26 03:06:26 [http-nio-9090-exec-7] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 84.00 | New Balance: 85.00
+2025-03-26 03:06:27 [http-nio-9090-exec-4] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 85.00 | New Balance: 86.00
+2025-03-26 03:06:27 [http-nio-9090-exec-8] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 86.00 | New Balance: 87.00
+2025-03-26 03:06:27 [http-nio-9090-exec-3] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 87.00 | New Balance: 88.00
+2025-03-26 03:06:27 [http-nio-9090-exec-1] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 88.00 | New Balance: 89.00
+2025-03-26 03:06:27 [http-nio-9090-exec-5] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 89.00 | New Balance: 90.00
+2025-03-26 03:06:27 [http-nio-9090-exec-10] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 90.00 | New Balance: 91.00
+2025-03-26 03:06:27 [http-nio-9090-exec-6] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 91.00 | New Balance: 92.00
+2025-03-26 03:06:27 [http-nio-9090-exec-9] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 92.00 | New Balance: 93.00
+2025-03-26 03:06:27 [http-nio-9090-exec-2] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 93.00 | New Balance: 94.00
+2025-03-26 03:06:27 [http-nio-9090-exec-4] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 94.00 | New Balance: 95.00
+2025-03-26 03:06:27 [http-nio-9090-exec-8] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 95.00 | New Balance: 96.00
+2025-03-26 03:06:28 [http-nio-9090-exec-3] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 96.00 | New Balance: 97.00
+2025-03-26 03:06:28 [http-nio-9090-exec-7] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 97.00 | New Balance: 98.00
+2025-03-26 03:06:28 [http-nio-9090-exec-1] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 98.00 | New Balance: 99.00
+2025-03-26 03:06:28 [http-nio-9090-exec-5] INFO  c.s.C.s.s.i.n.S.SalaryAccountServices - Incremented Salary Account: 1 | Previous Balance: 99.00 | New Balance: 100.00
+2025-03-26 03:07:47 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-26 03:07:47 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-26 03:07:47 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-26 03:07:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-26 03:07:48 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

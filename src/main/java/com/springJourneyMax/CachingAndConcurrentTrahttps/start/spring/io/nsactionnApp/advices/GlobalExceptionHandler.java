@@ -2,7 +2,6 @@ package com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsacti
 
 import com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Exceptions.MySQLTransactionRollbackException;
 import com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Exceptions.ResourceNotFoundException;
-import org.hibernate.StaleObjectStateException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -16,9 +15,9 @@ public class GlobalExceptionHandler {
         return ResponseEntity.notFound().build();
     }
 
-    @ExceptionHandler(StaleObjectStateException.class)
-    public ResponseEntity<?> handlesStaleObjectState(StaleObjectStateException e){
-        return new ResponseEntity<>("Stale occur \n", HttpStatus.CONFLICT);
+    @ExceptionHandler(RuntimeException.class)
+    public ResponseEntity<?> handlesRunTimeException(RuntimeException e){
+        return ResponseEntity.notFound().build();
     }
 
     @ExceptionHandler(MySQLTransactionRollbackException.class)

@@ -12,6 +12,23 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 import java.util.Optional;
+// --------- Propagation Levels (Commented) ---------
+
+// @Transactional(propagation = Propagation.REQUIRED)  // Uses existing transaction if available; otherwise, creates a new one.
+// @Transactional(propagation = Propagation.REQUIRES_NEW)  // Always creates a new transaction, suspending the existing one.
+// @Transactional(propagation = Propagation.MANDATORY)  // Requires an existing transaction; throws an exception if none exists.
+// @Transactional(propagation = Propagation.SUPPORTS)  // Uses a transaction if available; executes non-transactionally otherwise.
+// @Transactional(propagation = Propagation.NOT_SUPPORTED)  // Executes non-transactionally, suspending any existing transaction.
+// @Transactional(propagation = Propagation.NEVER)  // Ensures no active transaction; throws an exception if a transaction exists.
+// @Transactional(propagation = Propagation.NESTED)  // Executes within a nested transaction if a parent transaction exists.
+
+// --------- Isolation Levels (Commented) ---------
+
+// @Transactional(isolation = Isolation.DEFAULT)  // Uses the default isolation level of the database.
+// @Transactional(isolation = Isolation.READ_UNCOMMITTED)  // Allows reading uncommitted (dirty) data, improving performance but risking inconsistencies.
+// @Transactional(isolation = Isolation.READ_COMMITTED)  // Ensures only committed data is read, preventing dirty reads.
+// @Transactional(isolation = Isolation.REPEATABLE_READ)  // Ensures the same data is read consistently within a transaction, preventing non-repeatable reads.
+// @Transactional(isolation = Isolation.SERIALIZABLE)  // Fully isolates transactions, preventing dirty reads, non-repeatable reads, and phantom reads.
 
 @Slf4j
 @Service
