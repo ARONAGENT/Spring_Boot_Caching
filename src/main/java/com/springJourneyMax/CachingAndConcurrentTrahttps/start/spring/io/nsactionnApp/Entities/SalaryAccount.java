@@ -1,5 +1,6 @@
 package com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -20,5 +21,6 @@ public class SalaryAccount {
     private BigDecimal balance;
 
     @OneToOne
+    @JsonIgnore
     private EmployeeEntity employee;
 }
