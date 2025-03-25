@@ -3,7 +3,9 @@ package com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsacti
 
 
 import com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Dtos.EmployeeDTO;
+import com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Entities.SalaryAccount;
 import com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Services.EmployeeServices;
+import com.springJourneyMax.CachingAndConcurrentTrahttps.start.spring.io.nsactionnApp.Services.SalaryAccountServices;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,8 +17,10 @@ import java.util.List;
 public class EmployeeController {
 
     private final EmployeeServices empServ;
-    public EmployeeController(EmployeeServices empServ) {
+    private final SalaryAccountServices salaryAccountServices;
+    public EmployeeController(EmployeeServices empServ, SalaryAccountServices salaryAccountServices) {
         this.empServ = empServ;
+        this.salaryAccountServices = salaryAccountServices;
     }
 
     @GetMapping(path="/info")
@@ -47,6 +51,12 @@ public class EmployeeController {
     @DeleteMapping(path = "/delete/{empId}")
     public ResponseEntity<EmployeeDTO> deleteByEmployeeID(@PathVariable int empId) {
         return empServ.deleteEmployee(empId);
+    }
+
+    @PutMapping(path = "/incrementAccBalance/{account_id}")
+    public ResponseEntity<SalaryAccount> incrementSalary(@PathVariable Long account_id){
+        SalaryAccount account=salaryAccountServices.incrementSalary(account_id);
+        return ResponseEntity.ok(account);
     }
 
 }
