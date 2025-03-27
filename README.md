@@ -5,6 +5,8 @@
 ### What is Caching?
 Caching allows you to efficiently reuse previously retrieved or computed data. In computing, a cache is a high-speed data storage layer that stores a subset of data, typically transient in nature. This ensures that future requests for that data are served faster than by accessing the data’s primary storage location.
 
+### Notes - [Caching And Concurrent Transaction Management.pdf](https://github.com/user-attachments/files/19491603/Caching.And.Concurrent.Transaction.Management.pdf)
+
 ## 2. Spring Boot Default Caching
 
 Spring Boot provides built-in caching mechanisms using annotations:
